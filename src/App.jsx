@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Container } from '@mui/material';
+import { AppBar, Toolbar, Box, Typography, Button, Container } from '@mui/material';
+import logo from './CareerCovenLogo.svg';
 import Home from './views/Home';
 import CommunityGuidelines from './views/CommunityGuidelines';
 import Profiles from './views/Profiles';
 import Events from './views/Events';
+import MentorProfile from './views/MentorProfile';
 import './App.css';
 
 function App() {
@@ -11,9 +13,24 @@ function App() {
     <BrowserRouter>
       <AppBar position="static" sx={{ width: '100%', background: '#152a47', color: '#fff8f0' }}>
         <Toolbar>
-          <Typography variant="h6" component={Link} to="/" sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit', '&:hover': { color: '#ffffff' } }}>
-            Career Coven
-          </Typography>
+          <Box
+            component={Link}
+            to="/"
+            sx={{
+              flexGrow: 1,
+              display: 'flex',
+              alignItems: 'center',
+              gap: 1.5,
+              textDecoration: 'none',
+              color: 'inherit',
+              '&:hover': { color: '#ffffff' },
+            }}
+          >
+            <img src={logo} alt="" style={{ height: 40 }} />
+            <Typography variant="h6" sx={{ color: 'inherit', fontWeight: 600 }}>
+              Career Coven
+            </Typography>
+          </Box>
           <Button color="inherit" component={Link} to="/">
             Home
           </Button>
@@ -32,6 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profiles" element={<Profiles />} />
+          <Route path="/mentor/amara" element={<MentorProfile />} />
           <Route path="/events" element={<Events />} />
           <Route path="/community-guidelines" element={<CommunityGuidelines />} />
         </Routes>
