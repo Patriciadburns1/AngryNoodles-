@@ -34,7 +34,7 @@ const mockProfiles = [
     id: 12,
     name: "Amara Koné",
     role: "Senior Engineering Manager · Monzo",
-    strengths: ['Financial literacy', 'Financial negotiation', 'Budget planning'],
+    strengths: ['Financial literacy', 'Burnout', 'Financial negotiation', 'Budget planning'],
     languages: ['English', 'French'],
   },
   {
@@ -62,7 +62,7 @@ const mockProfiles = [
     id: 4,
     name: 'Morgan Lee',
     role: 'Community Educator',
-    strengths: ['Financial literacy', 'Financial negotiation', 'Tax preparation'],
+    strengths: ['Burnout','Financial negotiation', 'Community engagement  '],
     languages: ['English', 'Korean'],
   },
   {
@@ -85,6 +85,13 @@ const mockProfiles = [
     role: 'Software Engineer III',
     strengths: ['Negotiation', 'Career Pivot', 'Public Speaking'],
     languages: ['English', 'Portuguese'],
+  },
+  {
+    id: 9,
+    name: 'Cynthia Green',
+    role: 'Product Manager',
+    strengths: ['Motherhood and working full-time', 'COO', 'Public Speaking'],
+    languages: ['English', 'French'],
   },
 ];
 

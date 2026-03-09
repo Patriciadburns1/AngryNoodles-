@@ -38,7 +38,7 @@ const mentor = {
   trust: [
     { icon: '🛡️', text: 'Women-only space' },
     { icon: '👁️', text: 'No algorithms. Amara reads this herself.' },
-    { icon: '🔒', text: 'Conversations stay private' },
+    { icon: '🔒', text: 'Conversations stay private see Community Guidelines for more details.' },
   ],
 };
 
@@ -109,7 +109,6 @@ export default function MentorProfile() {
           position: 'sticky',
           top: 0,
           zIndex: 100,
-          py: 2,
           px: 3,
           background: 'background.default',
           borderBottom: '1px solid',
@@ -128,7 +127,7 @@ export default function MentorProfile() {
       </Box>
 
       {/* ── PAGE CONTENT ── */}
-      <Box sx={{ maxWidth: 1200, mx: 'auto', px: 3, mt: 4 }}>
+      <Box sx={{ maxWidth: 1200, mx: 'auto', px: 3 }}>
         <Box
           sx={{
             display: 'grid',
