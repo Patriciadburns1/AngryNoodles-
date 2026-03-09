@@ -28,7 +28,7 @@ function App() {
           </Button>
         </Toolbar>
       </AppBar>
-      <Container maxWidth="md" sx={{ mt: 4 }}>
+      <Container maxWidth="lg" sx={{ mt: 4 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profiles" element={<Profiles />} />

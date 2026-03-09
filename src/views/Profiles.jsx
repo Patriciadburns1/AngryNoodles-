@@ -1,4 +1,4 @@
-import { Typography, Box, Card, CardContent, CardActions, Button, Grid, Chip, Stack } from '@mui/material';
+import { Typography, Box, Card, CardContent, CardActions, Button, Chip, Stack } from '@mui/material';
 
 const mockProfiles = [
   {
@@ -37,21 +37,32 @@ const mockProfiles = [
     role: 'Financial Wellness Advocate',
     strengths: ['Financial literacy', 'Debt management', 'Financial negotiation'],
   },
-];
+  
+  {
+    id: 6,
+    name: 'Kimberly Wallis',
+    role: 'Software Engineer III',
+    strengths: ['Negotiation', 'Career Pivot', 'Public Speaking'],
+  },];
 
 function Profiles() {
   return (
     <Box sx={{ py: 4 }}>
       <Typography variant="h3" component="h1" gutterBottom>
-        Profiles
+        Learn from people who've been there 
       </Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
         Browse community members and their strengths.
       </Typography>
-      <Grid container spacing={3}>
+      <Box
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: 3,
+        }}
+      >
         {mockProfiles.map((profile) => (
-          <Grid item xs={12} sm={6} md={4} key={profile.id}>
-            <Card sx={{ height: 280, display: 'flex', flexDirection: 'column' }}>
+          <Card key={profile.id} sx={{ width: '100%', height: 280, display: 'flex', flexDirection: 'column', boxSizing: 'border-box' }}>
               <CardContent sx={{ flexGrow: 1 }}>
                 <Typography variant="h6" gutterBottom>
                   {profile.name}
@@ -75,9 +86,8 @@ function Profiles() {
                 <Button size="small">View Profile</Button>
               </CardActions>
             </Card>
-          </Grid>
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
 }
