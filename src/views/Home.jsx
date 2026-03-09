@@ -82,7 +82,7 @@ function Home() {
         <Button
           variant="contained"
           component={Link}
-          to="/profiles"
+          to="/create-profile"
           size="large"
           sx={{
             textTransform: 'none',

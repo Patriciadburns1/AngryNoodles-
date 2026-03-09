@@ -1,4 +1,4 @@
-import { Typography, Box, Paper, List, ListItem, ListItemText } from '@mui/material';
+import { Typography,Button, Box, Paper, List, ListItem, ListItemText } from '@mui/material';
 
 function CommunityGuidelines() {
   const guidelines = [
@@ -7,6 +7,8 @@ function CommunityGuidelines() {
     'Protect privacy — do not share others\' personal information.',
     'Provide constructive feedback and support.',
     'Report violations to help maintain a safe environment.',
+    'Mentors: Do not share mentees\' personal information.',
+    'Mentors: Be constructive, non-judgemental, and supportive.',
   ];
 
   return (
@@ -26,6 +28,18 @@ function CommunityGuidelines() {
           ))}
         </List>
       </Paper>
+      <Button
+  href="#"
+  onClick={(e) => e.preventDefault()}
+  sx={{
+    mt: 3,
+    textTransform: 'none',
+    color: 'secondary.main',
+    '&:hover': { color: '#9CAF88', backgroundColor: 'transparent' },
+  }}
+>
+  Report a violation →
+</Button>
     </Box>
   );
 }

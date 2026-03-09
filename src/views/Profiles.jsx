@@ -35,50 +35,58 @@ const mockProfiles = [
     name: "Amara Koné",
     role: "Senior Engineering Manager · Monzo",
     strengths: ['Financial literacy', 'Financial negotiation', 'Budget planning'],
+    languages: ['English', 'French'],
   },
   {
     id: 1,
     name: 'Alexandra Johnson',
     role: 'Financial Advisor',
     strengths: ['Financial literacy', 'Financial negotiation', 'Budget planning'],
+    languages: ['English', 'Spanish'],
   },
   {
     id: 2,
     name: 'Samantha Chen',
     role: 'Credit Specialist',
     strengths: ['Motherhood and working full-time', 'Debt management', 'LGBTQ+'],
+    languages: ['English', 'Mandarin'],
   },
   {
     id: 3,
     name: 'Jordyn Taylor',
     role: 'Money Coach',
     strengths: ['Financial negotiation', 'Savings strategies', 'Investment basics'],
+    languages: ['English'],
   },
   {
     id: 4,
     name: 'Morgan Lee',
     role: 'Community Educator',
     strengths: ['Financial literacy', 'Financial negotiation', 'Tax preparation'],
+    languages: ['English', 'Korean'],
   },
   {
     id: 5,
     name: 'Maya Patel',
     role: 'Housing Counselor',
     strengths: ['Financial negotiation', 'Mortgage literacy', 'Budget planning'],
+    languages: ['English', 'Hindi'],
   },
   {
-    id: 6,
+    id: 7,
     name: 'Carmen Williams',
     role: 'Financial Wellness Advocate',
     strengths: ['Financial literacy', 'Debt management', 'Financial negotiation'],
+    languages: ['English', 'Spanish'],
   },
-  
   {
-    id: 6,
+    id: 8,
     name: 'Kimberly Wallis',
     role: 'Software Engineer III',
     strengths: ['Negotiation', 'Career Pivot', 'Public Speaking'],
-  },];
+    languages: ['English', 'Portuguese'],
+  },
+];
 
 function Profiles() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -97,7 +105,8 @@ function Profiles() {
     if (!searchQuery.trim()) return mockProfiles;
     const query = searchQuery.trim().toLowerCase();
     return mockProfiles.filter((profile) =>
-      profile.strengths.some((strength) => strength.toLowerCase().includes(query))
+      profile.strengths.some((strength) => strength.toLowerCase().includes(query)) ||
+      profile.languages?.some((lang) => lang.toLowerCase().includes(query))
     );
   }, [searchQuery]);
 
@@ -110,7 +119,7 @@ function Profiles() {
         Browse community members and their strengths.
       </Typography>
       <TextField
-        placeholder="Search by interest, e.g. budget planning"
+        placeholder="Search by interest"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         size="small"
@@ -166,6 +175,11 @@ function Profiles() {
                     <Typography variant="body2" color="text.secondary">
                       {profile.role}
                     </Typography>
+                    {profile.languages?.length > 0 && (
+                      <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mt: 0.5 }}>
+                        {profile.languages.join(' · ')}
+                      </Typography>
+                    )}
                   </Box>
                 </Stack>
                 <Stack direction="row" flexWrap="wrap" gap={0.5} useFlexGap sx={{ mt: 1.5 }}>

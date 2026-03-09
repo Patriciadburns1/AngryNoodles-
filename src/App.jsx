@@ -6,6 +6,7 @@ import CommunityGuidelines from './views/CommunityGuidelines';
 import Profiles from './views/Profiles';
 import Events from './views/Events';
 import MentorProfile from './views/MentorProfile';
+import CreateProfile from './views/CreateProfile';
 import './App.css';
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
           <Route path="/mentor/amara" element={<MentorProfile />} />
           <Route path="/events" element={<Events />} />
           <Route path="/community-guidelines" element={<CommunityGuidelines />} />
+          <Route path="/create-profile" element={<CreateProfile />} />
         </Routes>
       </Container>
     </BrowserRouter>
