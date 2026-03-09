@@ -2,11 +2,11 @@ import { Typography, Box, Paper, List, ListItem, ListItemText } from '@mui/mater
 
 function CommunityGuidelines() {
   const guidelines = [
-    'Be respectful and inclusive toward all Women identifying members.',
-    'No harassment, hate speech, or discrimination.',
-    'Protect privacy — do not share others\' personal information.',
-    'Provide constructive feedback and support.',
-    'Report violations to help maintain a safe environment.',
+    'This space is for ciswomen, transwomen, and nonbinary people.'
+    'Be respectful and inclusive towards everyone.',
+    'Report harassment, hate speech, and discrimination.',
+    'Mentors: Do not share mentees\' personal information.',
+    'Mentors: Be constructive, nonjudgemental, and supportive.',
   ];
 
   return (
