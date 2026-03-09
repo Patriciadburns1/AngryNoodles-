@@ -1,0 +1,7 @@
+Title: "Career Coven"
+Tag line: "A mentorship app by women for women"
+Blurb 1: "Tired of litigating your right to exist as a woman in a workspace? You'd love a female mentor, but you're company is 90% men? Underpaid, and over it? "
+Blurb 2: "Career Coven is a safe space for all women to ask questions to real women who have been where you are now. Find mentors with the expertise you need, mentors in your local area, and mentors in your field!"
+Fake user review 1: "I knew I was being underpaid, but didn't know where to start - how to ask for a raise? What raise to ask for? J. was being incredibly helpful, she had tons of good advice, and even allowed me to roleplay the salary negotiation!"
+Fake user review 2: "I'm the only mum at my workplace and I felt quite isolated. It was so helpful being able to talk to someone who's been through something similar! A. also helped me ask questions I didn't even know I could ask, such as figuring out a safe space to pump!"
+Fake user review 3: "Thank you so much to S., you're marvellous! Friendly and excellent advice."
