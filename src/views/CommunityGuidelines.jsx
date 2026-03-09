@@ -17,7 +17,7 @@ function CommunityGuidelines() {
       <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
         Please read and follow these guidelines to help keep our community safe and welcoming.
       </Typography>
-      <Paper elevation={1} sx={{ p: 3 }}>
+      <Paper elevation={1} sx={{ p: 3, border: '1px solid', borderColor: '#c9a9a6' }}>
         <List>
           {guidelines.map((item, index) => (
             <ListItem key={index}>
