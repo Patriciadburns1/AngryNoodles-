@@ -18,7 +18,7 @@ function Events() {
       <Grid container spacing={2}>
         {sampleEvents.map((event) => (
           <Grid item xs={12} sm={6} md={4} key={event.id}>
-            <Card sx={{ border: '1px solid', borderColor: '#c9a9a6' }}>
+            <Card sx={{ border: '1px solid', borderColor: '#e8b4b8' }}>
               <CardContent>
                 <Typography variant="h6">{event.title}</Typography>
                 <Typography variant="body2" color="text.secondary">
