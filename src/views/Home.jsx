@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <Box sx={{ py: 4 }}>
-      <Typography variant="h3" component="h1" gutterBottom>
-        Your career <Box component="span" sx={{ fontStyle: 'italic' }}>finally</Box> has a safe space
+    <Box sx={{ py: 4, textAlign: 'left' }}>
+      <Typography variant="h2" component="h1" gutterBottom fontWeight="bold" sx={{ width: '50%' }}>
+        Your career, <Box component="span" sx={{ fontStyle: 'italic', color: '#e8b4b8' }}>finally</Box> has a safe space
       </Typography>
       <Typography variant="body1" color="text.secondary" sx={{ mb: '75px' }}>
         Welcome to our community. Explore profiles, check out events, and read our guidelines to get started.
@@ -16,7 +16,7 @@ function Home() {
           component={Link}
           to="/community-guidelines"
           size="large"
-          sx={{ textTransform: 'none', borderRadius: 6, px: 4, py: 1.5, fontSize: '1.1rem' }}
+          sx={{ textTransform: 'none', borderRadius: 5, px: 4, py: 1.5, fontSize: '1.1rem' }}
         >
           Join the Community →
         </Button>
@@ -24,8 +24,7 @@ function Home() {
           variant="outlined"
           component={Link}
           to="/profiles"
-          sx={{ textTransform: 'none', borderRadius: 6, px: 4, py: 1.5, fontSize: '1.1rem' }}
-
+          sx={{ textTransform: 'none' }}
         >
           Find a mentor
         </Button>
