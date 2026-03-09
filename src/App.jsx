@@ -9,9 +9,9 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <AppBar position="static" sx={{ width: '100%', background: '#d4dcc8', color: '#4a4a4a' }}>
+      <AppBar position="static" sx={{ width: '100%', background: '#152a47', color: '#fff8f0' }}>
         <Toolbar>
-          <Typography variant="h6" component={Link} to="/" sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit' }}>
+          <Typography variant="h6" component={Link} to="/" sx={{ flexGrow: 1, textDecoration: 'none', color: 'inherit', '&:hover': { color: '#ffffff' } }}>
             Career Coven
           </Typography>
           <Button color="inherit" component={Link} to="/">
